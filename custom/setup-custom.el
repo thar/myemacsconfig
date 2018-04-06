@@ -8,7 +8,17 @@
   (package-install 'helm-rtags))
 (unless (package-installed-p 'flycheck-rtags)
   (package-install 'flycheck-rtags))
+(unless (package-installed-p 'smart-mode-line)
+  (package-install 'smart-mode-line)
+  (package-install 'smart-mode-line-powerline-theme))
 
+(require 'smart-mode-line)
+;; These two lines are just examples
+(setq powerline-arrow-shape 'curve)
+(setq powerline-default-separator-dir '(right . left))
+;; These two lines you really need.
+(setq sml/theme 'powerline)
+(sml/setup)
 
 (require 'rtags)
 (require 'company-rtags)
