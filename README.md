@@ -1,2 +1,1 @@
-# myemacsconfig
-emacs config
+Emacs config based on http://tuhdo.github.io/c-ide.html
